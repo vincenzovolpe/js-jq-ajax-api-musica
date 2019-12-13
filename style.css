@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    height: 70px;
+    background-color: dimgray;
+    display: flex;
+    align-items: center;
+}
+
+header > img {
+    height: 80%;
+    padding-left: 300px;
+    o
+}
+
+main {
+    height: calc(100vh - 70px);;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discografia {
+    height: 90%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.disco {
+    height: calc((100% / 3) - 10px);
+    background: rgb(46, 58, 70);
+    width: calc((100% / 4) - 60px);
+    border: 1px solid;
+    margin: 5px 10px 5px 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.imgcopertina {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.disco img.copertina {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.disco p.titolo {
+    margin: 15px 0;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.disco small.artista {
+    color: grey;
+    font-size: 15px;
+    display: block;
+}
+
+.disco span.anno {
+    color: grey;
+}
