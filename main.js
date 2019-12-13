@@ -41,15 +41,19 @@ $(document).ready(function(){
     $('#scelta-genere').change(function(){
         // Recupero il genere selezionato dall'utente
         var genere_selezionato = $('#scelta-genere').val();
-        // Per ogni disco verifico se il suo genere corrispnde al genere genere_selezionato
-        $('.disco').each(function() {
-            var genere_disco = $(this).attr('data-genere');
-            // Se il genere del disco è uguale  al genere selezionato lo mostro
-            if (genere_disco.toLowerCase()  == genere_selezionato.toLowerCase()) {
-                $(this).fadeIn();
-            } else {
-                $(this).fadeOut();
-            }
-        });
+        if (genere_selezionato == '') {
+            $('.disco').fadeIn();
+        } else {
+            // Per ogni disco verifico se il suo genere corrispnde al genere genere_selezionato
+            $('.disco').each(function() {
+                var genere_disco = $(this).attr('data-genere');
+                // Se il genere del disco è uguale  al genere selezionato lo mostro
+                if (genere_disco.toLowerCase()  == genere_selezionato.toLowerCase()) {
+                    $(this).fadeIn();
+                } else {
+                    $(this).fadeOut();
+                }
+            });
+        }
     });
 });
