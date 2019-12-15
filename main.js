@@ -26,10 +26,9 @@ $(document).ready(function(){
                 $('#dischi').append(html);
                 // Altezza div immagine imgcopertina
                 // Setto l'altezza del div immagine copertina uguale alla larghezza
-                  var altezzacopertina = $('.imgcopertina').width();
+                  var altezzacopertina = $('img.copertina').width();
                   console.log(altezzacopertina);
-                  $('.imgcopertina').height(altezzacopertina);
-
+                  $('img.copertina').height(altezzacopertina);
             }
         },
         error: function() {
@@ -44,7 +43,7 @@ $(document).ready(function(){
         if (genere_selezionato == '') {
             $('.disco').fadeIn();
         } else {
-            // Per ogni disco verifico se il suo genere corrispnde al genere genere_selezionato
+            // Per ogni disco verifico se il suo genere corrisponde al genere genere_selezionato
             $('.disco').each(function() {
                 var genere_disco = $(this).attr('data-genere');
                 // Se il genere del disco è uguale  al genere selezionato lo mostro

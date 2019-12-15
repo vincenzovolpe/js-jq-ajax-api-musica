@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    height: 100vh;
-}
-
 header {
     height: 70px;
     background-color: dimgray;
@@ -17,8 +13,7 @@ header {
 
 header > img {
     height: 80%;
-    padding-left: 300px;
-    o
+    padding-left: 25%;
 }
 
 main {
@@ -36,28 +31,19 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
 .disco {
     height: calc((100% / 3) - 10px);
     background: rgb(46, 58, 70);
     width: calc((100% / 4) - 60px);
-    border: 1px solid;
     margin: 5px 10px 5px 10px;
     padding: 20px;
     text-align: center;
 }
 
-.imgcopertina {
-    width: 90%;
-    margin: 0 auto;
-}
-
 .disco img.copertina {
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
+    width: 85%;
 }
 
 .disco p.titolo {
@@ -75,4 +61,7 @@ main {
 
 .disco span.anno {
     color: grey;
+}
+#scelta-genere {
+    margin-bottom: 20px;
 }
